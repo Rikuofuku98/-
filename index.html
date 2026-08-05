@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Home | 鈴木粋生のPortfolio</title>
+  <meta name="description" content="鈴木粋生の学び、制作物、スキルを紹介するポートフォリオサイトです。">
+  <link href="css/bootstrap-3.4.1.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+  <div id="splash" aria-hidden="true"><span id="splash_text">Loading</span></div>
+
+  <header id="header" class="site-header">
+    <nav class="navbar navbar-default navbar-static-top" aria-label="メインナビゲーション">
+      <div class="container-fluid site-nav-container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navigation"
+            aria-controls="site-navigation" aria-expanded="false">
+            <span class="sr-only">メニューを開く</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">ぽーとふぉりお</a>
+        </div>
+        <div class="collapse navbar-collapse" id="site-navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index.html" aria-current="page"><span lang="en">Home</span></a></li>
+            <li><a href="about.html"><span lang="en">About</span></a></li>
+            <li><a href="works.html"><span lang="en">Works</span></a></li>
+            <li><a href="skills.html"><span lang="en">Skills</span></a></li>
+            <li><a href="contact.html"><span lang="en">Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="site-main" tabindex="-1">
+    <section class="page-hero" aria-labelledby="home-heading">
+      <div class="page-hero__media">
+        <picture aria-hidden="true">
+          <source media="(max-width: 767px)" srcset="image/top-home-mobile.jpg">
+          <img src="image/top-home.jpg" width="1600" height="700" alt="" decoding="async">
+        </picture>
+      </div>
+      <div class="page-hero__content site-container">
+        <h1 id="home-heading">こんにちは、鈴木粋生です。</h1>
+        <p style="font-size: 1.75rem;">大学での学びや制作した作品をまとめたポートフォリオサイトです。</p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div style="color: #fff;" class="site-container">
+        <h2 style="color: #fff;">About Me</h2>
+        <p class="lead">情報システムを学びながら、プログラミング、デザイン、音楽に関心を持って制作に取り組んでいます。</p>
+        <div class="button-row">
+          <a  class="button button--outline" href="about.html">プロフィールの詳細を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block section-muted home-works" aria-labelledby="featured-works-heading">
+      <div class="site-container">
+        <h2 style="color: var(--brand-deep);" id="featured-works-heading">Works</h2>
+        <ul class="card-grid">
+          <li>
+            <article class="work-card">
+              <img src="image/課題７.png" width="400" height="300" alt="作品タイトル01のサムネイル画像">
+              <h2>仮面ライダー</h2>
+              <p>JavaScriptで数式を使って描画。<br>不思議な気持ち悪い背景を意識</p>
+            </article>
+          </li>
+          <li>
+            <article class="work-card">
+              <img src="image/zisaguessr.png" width="400" height="300" alt="作品タイトル02のサムネイル画像">
+              <h2>ZisaGuessr</h2>
+              <p>時差から国を当てるゲーム<br>難易度が3種類あり、中からでもむずかしい</p>
+            </article>
+          </li>
+          <li>
+            <article class="work-card">
+              <img src="image/discord.png" style="width: 400px; height: 250px;" alt="作品タイトル03のサムネイル画像">
+              <h2>Discord分析アプリ</h2>
+              <p>Pythonの練習で作成<br>チャット履歴から発言者ごとに発言数や時間帯を分析</p>
+            </article>
+          </li>
+        </ul>
+        <div class="button-row">
+          <a class="button" href="works.html">すべての作品を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block" aria-labelledby="contact-cta-heading">
+      <div class="site-container">
+        <h2 style="color: #fff;" id="contact-cta-heading">Contact</h2>
+        <p  style="color: #fff;" class="section-intro">ご依頼やご質問は、連絡先を設定したうえで受け付ける予定です。</p>
+        <a style="background-color: var(--brand);" class="button" href="contact.html">連絡先を見る</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-container">
+      <p>© 2026 鈴木粋生（掲載文章・自作作品）</p>
+      <p><a href="credits.html">画像・素材のクレジットと著作権表示</a></p>
+    </div>
+  </footer>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap-3.4.1.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
